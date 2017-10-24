@@ -22,15 +22,15 @@ void tablero(){
                 if(i<1 || i==altura-1){
                     tabla[i][j]='#';
                 }else{
-                    / * Check if the row is different from the first and also, 
-                    it also verifies if it is the column 0 to only fill the sides * /
+                    /* Check if the row is different from the first and also, 
+                    it also verifies if it is the column 0 to only fill the sides */
                     if(i>0 && j<1){
                         tabla[i][0]='#';
                         tabla[i][anchura-1]='#';
                     }else{
                         // Fill in all non-borders with spaces
                         tabla[i][j]=' ';
-                        / * Ends the cycle when the column reaches an anterior position of the right edge * /
+                        /* Ends the cycle when the column reaches an anterior position of the right edge */
                         if(j==anchura-2){
                             break;
                         }
